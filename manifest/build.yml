@@ -1,0 +1,32 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: mcsh-site-assembly
+  namespace: default
+spec:
+  runLatest:
+    configuration:
+      build:
+        apiVersion: build.knative.dev/v1alpha1
+        kind: Build
+        spec:
+          serviceAccountName: build-bot
+          source:
+            git:
+              url: https://github.com/mcserverhosting-net/site.git
+              revision: master
+          template:
+            name: kaniko
+            arguments:
+              - name: IMAGE
+                value: docker.io/quantomworks/mcsh-site:latest
+          timeout: 10m
+      revisionTemplate:
+        metadata:
+          annotations:
+            autoscaling.knative.dev/minScale: "1"
+            autoscaling.knative.dev/maxScale: "20"
+        spec:
+          container:
+            image: docker.io/quantomworks/mcsh-site:latest
+            imagePullPolicy: Always
