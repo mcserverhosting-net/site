@@ -1,3 +1,4 @@
-FROM 0xff/asmttpd
+FROM alpine:latest
+RUN mkdir -p /var/ww
 COPY . /var/www
-CMD ["/bin/asmttpd","/var/www"]
+CMD ["/var/www/asmttpd","/var/www/public"]
