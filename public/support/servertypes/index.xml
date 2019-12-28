@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Servertypes on MC Server Hosting</title>
+    <link>https://mcserverhosting.net/support/servertypes/</link>
+    <description>Recent content in Servertypes on MC Server Hosting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2019 04:37:53 -0500</lastBuildDate>
+    
+	<atom:link href="https://mcserverhosting.net/support/servertypes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>all</title>
+      <link>https://mcserverhosting.net/support/servertypes/all/</link>
+      <pubDate>Sat, 28 Dec 2019 04:37:53 -0500</pubDate>
+      
+      <guid>https://mcserverhosting.net/support/servertypes/all/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on MC Server Hosting</title>
+    <link>https://mcserverhosting.net/support/categories/</link>
+    <description>Recent content in Categories on MC Server Hosting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2019 04:37:53 -0500</lastBuildDate>
+    
+	<atom:link href="https://mcserverhosting.net/support/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://mcserverhosting.net/support/categories/getting-started/</link>
+      <pubDate>Sat, 28 Dec 2019 04:37:53 -0500</pubDate>
+      
+      <guid>https://mcserverhosting.net/support/categories/getting-started/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on MC Server Hosting</title>
+    <link>https://mcserverhosting.net/support/tags/</link>
+    <description>Recent content in Tags on MC Server Hosting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2019 04:37:53 -0500</lastBuildDate>
+    
+	<atom:link href="https://mcserverhosting.net/support/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>files</title>
+      <link>https://mcserverhosting.net/support/tags/files/</link>
+      <pubDate>Sat, 28 Dec 2019 04:37:53 -0500</pubDate>
+      
+      <guid>https://mcserverhosting.net/support/tags/files/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://mcserverhosting.net/support/tags/ssh/</link>
+      <pubDate>Sat, 28 Dec 2019 04:37:53 -0500</pubDate>
+      
+      <guid>https://mcserverhosting.net/support/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://mcserverhosting.net/support/tags/terminal/</link>
+      <pubDate>Sat, 28 Dec 2019 04:37:53 -0500</pubDate>
+      
+      <guid>https://mcserverhosting.net/support/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
