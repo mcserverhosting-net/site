@@ -1,0 +1,21 @@
+[debug] [2020-03-16T07:06:25.900Z] ----------------------------------------------------------------------
+[debug] [2020-03-16T07:06:25.903Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shaba\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-03-16T07:06:25.903Z] CLI Version:   7.15.0
+[debug] [2020-03-16T07:06:25.903Z] Platform:      win32
+[debug] [2020-03-16T07:06:25.903Z] Node Version:  v12.14.0
+[debug] [2020-03-16T07:06:25.904Z] Time:          Mon Mar 16 2020 03:06:25 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-03-16T07:06:25.905Z] ----------------------------------------------------------------------
+[debug] [2020-03-16T07:06:25.905Z] 
+[debug] [2020-03-16T07:06:25.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-16T07:06:25.916Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\shaba\Documents\git\mcserverhosting-net\site\amp
+

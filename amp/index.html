@@ -1,0 +1,545 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="preload" href="/assets/minecraft-rocket.png" as="image">
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Maven Pro" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <style amp-custom>
+        .home-button {
+            margin-top: 8px;
+        }
+
+        .headerbar {
+            height: 50px;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .site-name {
+            margin: auto;
+            font-size: xx-large;
+        }
+
+        .main-content {
+            margin-top: 50px;
+        }
+
+        .hamburger {
+            padding-left: 10px;
+            cursor: pointer;
+            font-size: xx-large;
+        }
+
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .sidebar>li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+        }
+
+        .close-sidebar {
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
+
+
+        .hero {
+            background-image: url(assets/minecraft-rocket.png);
+            text-align: center;
+            position: relative;
+            height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hero-content {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            background-color: white;
+            display: inline-block;
+            max-width: 298px;
+
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card-dark {
+            background-color: rgba(0, 0, 0, 0.2)
+        }
+
+        amp-sidebar {
+            width: 200px;
+            background-color: #eef4f7;
+        }
+
+        .card i {
+            font-size: 60px;
+            color: #1485ee;
+            margin-top: 20px;
+            margin-bottom: 35px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
+        }
+
+
+        .navigation {
+            background-color: black;
+        }
+
+        .block {
+            margin: auto;
+            text-align: center;
+            padding: 50px;
+
+        }
+
+        .light-block {
+            background-color: #eef4f7;
+            color: #313437;
+        }
+
+        .block-inner {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 20px;
+        }
+        .btn a
+        {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            color: white;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-secondary {
+            color: #212529;
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+
+        .block-competitive {
+            background-image: url(assets/minecraft-pug.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .block-blue {
+            height: 120px;
+            background-color: #1e6add;
+            color: white;
+        }
+
+        .block-solar {
+            background-image: url(assets/minecraft-solar-panels.png);
+            height: 900px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: right;
+        }
+
+        .block-solar h2 {
+            font-size: xx-large;
+            vertical-align: middle;
+        }
+
+        .block-solar .block-inner
+        {
+            margin-top: 300px;
+        }
+
+        body {
+            color: white;
+            font-family: 'Maven Pro', sans-serif;
+            background-color: black;
+        }
+
+        footer
+        {
+            max-width: 1000px;
+            margin: auto;
+            color: #616161;
+        }
+
+        footer h3
+        {
+            color: white;
+        }
+
+        footer a
+        {
+            color: #616161;
+            text-decoration: none;
+        }
+        footer a:hover
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+        }
+
+        .flex-container>div {
+            width: 300px;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .copyright
+        {
+            text-align: center;
+        }
+    </style>
+
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <link rel="canonical" href=".">
+
+    <title>MC Server Hosting</title>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Webpage",
+      "url": "https://www.example.com",
+      "name": "My Webpage",
+      "headline": "webpage title",
+      "description": "Here is the description",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Publisher",
+        "logo": {
+          "url": "https://www.example.com/logo-blue.svg",
+          "width": 175,
+          "height": 60,
+          "@type": "ImageObject"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.example.com/leader.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <header class="headerbar navigation">
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+        <div class="site-name">
+            <amp-img alt="A view of the sea" src="assets/mcserverhosting-icon-transparent.svg" width="32" height="35"
+                layout="fixed">
+            </amp-img><span> MC Server Hosting</span>
+        </div>
+    </header>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+        </div>
+        <ul class="sidebar">
+            <li><a href="/plans">Plans</a></li>
+            <li><a href="https://discord.gg/vzwCs8K">Discord</a></li>
+            <li><a href="/support">Support</a></li>
+        </ul>
+    </amp-sidebar>
+
+    <div class="main-content">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Minecraft Server Hosting</h1>
+                <h2>Speed. Power. No overhead. Economy pricing.</h2>
+                <p>Minecraft Server Hosting lets you experience the raw power of hardware without any bulky features
+                    getting in the way. Login with your command line and you'll experience speeds you never imagined.
+                </p>
+
+                <button class="btn btn-primary"><a href="/plans">Order</a></button><button class="btn btn-secondary"><a href="#features">Features</a></button>
+            </div>
+        </div>
+
+        <div class="block light-block" id="features">
+            <div class="block-inner">
+
+                <h2>Features</h2>
+                <p>We strive to be the best Minecraft server host. Here are some of the features you'll have with us.
+                    Some of which, with no other host. That being said, we look forward to providing you an awesome
+                    experience.</p>
+
+                <div class="card">
+                    <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    <div class="container">
+                        <h4><b>Unlimited Bandwidth</b></h4>
+                        <p>We don't charge extra for any of the 1000MB/s Down or 250MB/s up we allocate to you and your
+                            Minecraft server.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <div class="container">
+                        <h4><b>Secure SSH</b></h4>
+                        <p>We give you a secure 2048bit key to connect to your Minecraft server. You can say goodbye to account
+                            hacks. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa fa-shield" aria-hidden="true"></i>
+                    <div class="container">
+                        <h4><b>DDOS Protection</b></h4>
+                        <p>Our network provider can withstand attacks up to 4TB/s and quickly identify real Minecraft
+                            traffic from fake traffic.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa fa-backward" aria-hidden="true"></i>
+                    <div class="container">
+                        <h4><b>60 Day Backups</b></h4>
+                        <p>We use an incremental backup system that allows you to restore from any Minecraft save point
+                            made
+                            up to 60 days in the past.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <div class="container">
+                        <h4><b>Quickstart</b></h4>
+                        <p>Choose from Sponge, Bukkit, Forge or Vanilla images to get started. We preinstall the server
+                            files for you so you can play!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    <div class="container">
+                        <h4><b>Community Support</b></h4>
+                        <p>Our discord community and staff are happy to assist you in any troubles you experience when
+                            working on your Minecraft server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-competitive">
+            <div class="block-inner">
+                <h2>Competitive Pricing</h2>
+                <p>Each plan is priced using a special formula rather than just Per GB. This means you'll get your
+                    money's worth for your Minecraft server. All plans run on I7700ks that clock up to 3.8GHz, run ECC
+                    DDR4 memory that clocks at to 2133MHz. Storage is backed by our erasure coded storage cluster. We
+                    proudly showcase our hardware specs loud and proud to our potential customers...unlike other
+                    Minecraft hosts.</p>
+
+                <div class="card card-dark">
+                    <div class="container">
+                        <h4><b>Vanilla</b></h4>
+                        <p>Minecraft Servers that want to just run plain vanilla packs, SpongeVanilla, Spigot or Bukkit
+                            servers are able to be handled with 1-3GB.</p>
+                    </div>
+                </div>
+
+                <div class="card card-dark">
+                    <div class="container">
+                        <h4><b>Modpacks</b></h4>
+                        <p>We recommend at least 4 GB of memory for major Minecraft Modpacks on Curse.</p>
+                    </div>
+                </div>
+
+                <div class="card card-dark">
+                    <div class="container">
+                        <h4><b>Communities</b></h4>
+                        <p>Minecraft communities run by Youtubers and Enterpernewers can enjoy the benefits of handling
+                            +200 players on our higher-end plans. We offer plans that scale up to 32 GB of memory. In
+                            which 4 cores would be dedicated solely to your server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block block-blue">
+            <div class="block-inner">
+                <h2>FACT</h2>
+                <p>We automatically detect and restart your Minecraft server upon stalls or crashes. Say goodbye to
+                    managing complicated shell scripts.</p>
+            </div>
+        </div>
+
+
+        <div class="block block-solar">
+            <div class="block-inner">
+                <h2>What are you waiting for?</h2>
+                <p>Accelerate Your Game With Us Today.</p>
+                <button class="btn btn-primary">View Plans</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="flex-container">
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="https://app.termly.io/document/privacy-policy/814175fe-9dce-467b-b672-c14bf395f68d"
+                            target="_blank">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Partners</h3>
+                <ul>
+                    <li><a href="https://www.spongepowered.org?ref=mcserverhosting">SpongePowered</a></li>
+                    <li><a href="http://discord.galacticraftcentral.com/">Galacticraft Central</a></li>
+                    <li><a href="https://discord.gg/tNsKE8Q">Turbo | Freelancer Marketplace</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>MC Server Hosting</h3>
+                <p>Performance-based Minecraft Server hosting. We're excited to get started with you. </p>
+            </div>
+        </div>
+        <p class="copyright">MC Server Hosting © 2020</p>
+    </footer>
+
+</body>
+
+</html>
