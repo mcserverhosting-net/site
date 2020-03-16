@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Maven Pro" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         type="text/css" />
+    <!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
 
     <style amp-custom>
         .home-button {
@@ -71,7 +73,7 @@
             background-image: url(assets/minecraft-rocket.png);
             text-align: center;
             position: relative;
-            height: 700px;
+            height: 900px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -363,6 +365,9 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NSGW439&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+
     <header class="headerbar navigation">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
         <div class="site-name">
@@ -505,7 +510,7 @@
             <div class="block-inner">
                 <h2>What are you waiting for?</h2>
                 <p>Accelerate Your Game With Us Today.</p>
-                <button class="btn btn-primary">View Plans</button>
+                <button class="btn btn-primary"><a href="/plans">View Plans</a></button>
             </div>
         </div>
     </div>

@@ -13,6 +13,8 @@
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
     <!-- 
         Temp disabled due to 
         https://github.com/paypal/paypal-checkout-components/issues/1289 </script>
@@ -501,6 +503,8 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager -->
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NSGW439&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
     <header class="headerbar navigation">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
         <div class="site-name">
